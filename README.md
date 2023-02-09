@@ -20,7 +20,7 @@ git clone https://github.com/Yavuz341/AtauniOBS.git
 
 ### Images
 
-<img src="project_images/admin.png" alt="alt text" width="320" height="180">
+<img src="project_images/admin.png" alt="admin screen">
 
 
 ## Authors
