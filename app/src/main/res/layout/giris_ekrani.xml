@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bilgiler_arkaplan_iki"
+
+
+    tools:context=".GirisEkraniActivity">
+
+    <ImageView
+        android:id="@+id/girisResim"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/universite_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        >
+    </ImageView>
+    <EditText
+        android:id="@+id/girisSifreTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:drawablePadding="8dp"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/lock_icon"
+        android:ems="10"
+        android:hint="@string/sifre"
+        android:inputType="textPassword"
+        android:maxLength="25"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/girisTcNo" />
+
+    <Button
+        android:id="@+id/girisButonu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="64dp"
+
+        android:background="@drawable/buton_arka_plan"
+        android:text="@string/girisButonu"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/checkBox" />
+
+    <TextView
+        android:id="@+id/sifremiUnuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/sifremi_unuttum"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintCircleRadius="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/girisSifreTxt" />
+
+    <Button
+        android:id="@+id/kayitOlBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="512dp"
+
+        android:background="@drawable/buton_arka_plan"
+        android:text="@string/kayit_ol"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        app:layout_constraintCircle="@id/girisButonu"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/girisButonu"
+
+
+        />
+
+    <EditText
+        android:id="@+id/girisTcNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="80dp"
+        android:drawablePadding="8dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/person_icon"
+        android:ems="10"
+        android:hint="@string/t_c_kimlik_no"
+        android:inputType="number"
+        android:maxLength="11"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/girisResim"
+
+
+         />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="48dp"
+        android:text="@string/beni_hat_irla"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+
+        app:layout_constraintTop_toBottomOf="@id/girisSifreTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

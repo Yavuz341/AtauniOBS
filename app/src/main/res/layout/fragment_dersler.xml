@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DerslerFragment"
+    >
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <TableLayout
+            android:id="@+id/tabloBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/fragmentDersKodu"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp"
+                    android:text="Ders Kodu"
+                    android:textColor="@color/black"
+
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fragmentDersAdi"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp"
+                    android:text="Ders Adı"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/fragmentKrediler"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp"
+                    android:text="T / U / L / K"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/fragmentOgretimElemani"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp"
+                    android:text="Dersi Veren Öğretim Elemanı"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+
+                    />
+
+            </TableRow>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDersler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+
+        </TableLayout>
+
+
+
+</RelativeLayout>
+    </HorizontalScrollView>
+
+
+</FrameLayout>

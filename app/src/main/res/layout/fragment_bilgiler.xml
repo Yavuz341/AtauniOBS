@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BilgilerFragment"
+    android:background="@drawable/bilgiler_arkaplan_iki"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/bilgilerAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:text="Adı"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/beyaza_yakin"
+
+
+            />
+        <TextView
+            android:id="@+id/bilgilerAdKutu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/bilgilerAd"
+            android:background="@drawable/txt_arka_plan"
+            android:textSize="18sp"
+
+
+
+            />
+        <TextView
+            android:id="@+id/bilgilerSoyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soyadı"
+            android:layout_below="@id/bilgilerAdKutu"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/beyaza_yakin"
+
+
+            />
+        <TextView
+            android:id="@+id/bilgilerSoyadKutu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/bilgilerSoyad"
+            android:background="@drawable/txt_arka_plan"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+
+            />
+        <TextView
+            android:id="@+id/bilgilerBolum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Okuduğu Bölüm"
+            android:layout_below="@id/tcNo"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/beyaza_yakin"
+
+            />
+        <TextView
+            android:id="@+id/bilgilerBolumKutu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/bilgilerBolum"
+            android:background="@drawable/txt_arka_plan"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtStatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Statü"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/bilgilerBolumKutu"
+            android:textColor="@color/beyaza_yakin"
+
+
+
+            />
+        <TextView
+            android:id="@+id/Statu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_arka_plan"
+            android:layout_below="@+id/txtStatu"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+        />
+        <TextView
+            android:id="@+id/txtOgrenciNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Öğrenci Numarası"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:layout_below="@+id/Statu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/beyaza_yakin"
+            />
+        <TextView
+            android:id="@+id/OgrenciNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/txtOgrenciNo"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/txt_arka_plan"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:enabled="false" />
+        <TextView
+            android:id="@+id/bilgilerDanisman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danışman Bilgisi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/OgrenciNo"
+            android:textColor="@color/beyaza_yakin"
+
+            />
+        <TextView
+            android:id="@+id/bilgilerDanismanKutu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/bilgilerDanisman"
+            android:background="@drawable/txt_arka_plan"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtTcNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T.C."
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:layout_below="@+id/bilgilerSoyadKutu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/beyaza_yakin"
+
+            />
+        <TextView
+            android:id="@+id/tcNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTcNo"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/txt_arka_plan"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:enabled="false"
+
+
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/txtTelNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon Numarası"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/beyaza_yakin"
+            android:layout_below="@+id/bilgilerOrtalamaKutu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+
+
+
+            />
+        <TextView
+            android:id="@+id/telNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/txtTelNo"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/txt_arka_plan"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:enabled="false"
+
+
+
+            />
+        <TextView
+            android:id="@+id/txtMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail Adresi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/beyaza_yakin"
+            android:layout_below="@+id/telNo"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+
+            />
+        <TextView
+            android:id="@+id/mailAdresi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/txtMail"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/txt_arka_plan"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+
+
+
+            />
+        <TextView
+            android:id="@+id/bilgilerAkademikDonem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akademik Dönem"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/beyaza_yakin"
+            android:layout_below="@id/bilgilerKayitKutu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/bilgilerAkademikKutu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bilgilerAkademikDonem"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/txt_arka_plan"
+            android:enabled="false"
+            android:inputType="number"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/bilgilerKayitTarihi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Tarihi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/beyaza_yakin"
+            android:layout_below="@id/bilgilerDanismanKutu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+
+            />
+        <TextView
+            android:id="@+id/bilgilerKayitKutu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bilgilerKayitTarihi"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/txt_arka_plan"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:enabled="false"
+
+
+
+            />
+        <TextView
+            android:id="@+id/bilgilerMezuniyetOrtalamasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mezuniyet Ortalaması"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/beyaza_yakin"
+            android:layout_below="@id/bilgilerAkademikKutu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+
+            />
+        <TextView
+            android:id="@+id/bilgilerOrtalamaKutu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bilgilerMezuniyetOrtalamasi"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/txt_arka_plan"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:enabled="false"
+
+            />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</FrameLayout>

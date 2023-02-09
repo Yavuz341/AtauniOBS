@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+
+
+    <item
+        android:id="@+id/anasayfa"
+        android:title="Anasayfa"
+        android:icon="@drawable/anasayfa_icon"
+        />
+
+
+    <item
+        android:id = "@+id/kisiselBilgiler"
+        android:title="Kişisel Bilgiler"
+        android:icon="@drawable/person_icon_siyah"/>
+
+
+    <item
+        android:title="Dersler"
+        android:id="@+id/dersler"
+        android:icon="@drawable/dersler_icon"
+
+        />
+    <item
+        android:title="Sınavlar"
+        android:id="@+id/sinavlar"
+        android:icon="@drawable/sinav_sonuclari_icon"
+        />
+    <item
+        android:title="Çıkış Yap"
+        android:id="@+id/cikisYap"
+        android:icon="@drawable/ic_outline_exit_to_app_24"
+        />
+
+
+</menu>

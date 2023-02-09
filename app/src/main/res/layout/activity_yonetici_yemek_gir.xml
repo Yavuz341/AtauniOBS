@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityYoneticiYemekGir"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bilgiler_arkaplan_iki"
+    >
+    <EditText
+        android:id="@+id/corbaGir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Günün Çorbası"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+    <EditText
+        android:id="@+id/anaYemekGir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Günün Ana Yemeği"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+
+        />
+    <EditText
+        android:id="@+id/pilavCesidiGir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Günün Pilavı"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+    <EditText
+        android:id="@+id/tatliGir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Günün Tatlisi"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        />
+    <Button
+        android:id="@+id/yemegiOnayla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yemeği Onayla"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buton_arka_plan"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

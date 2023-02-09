@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SifreDegistirActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bilgiler_arkaplan_iki"
+    >
+
+    <EditText
+        android:id="@+id/yeniSifreGir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yeni Şifrenizi Giriniz"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+
+        />
+    <EditText
+        android:id="@+id/yeniSifreTekrarGir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yeniSifreGir"
+        android:layout_marginTop="24dp"
+        android:hint="Yeni Şifrenizi Tekrar Giriniz"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+
+        />
+    <Button
+        android:id="@+id/sifreYenile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sifre Yenile"
+        android:layout_below="@+id/yeniSifreTekrarGir"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background = "@drawable/buton_arka_plan"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
