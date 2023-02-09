@@ -20,10 +20,11 @@ git clone https://github.com/Yavuz341/AtauniOBS.git
 
 ### Images
 
-<img src="project_images/admin.png" alt="admin screen">
+<img src="project_images/admin.png" alt="admin screen" text-align="center">
 <img src="project_images/login.png" alt="login screen">
 <img src="project_images/main.png" alt="main screen">
 <img src="project_images/navigationbar.png" alt="navigation bar">
+
 
 
 
